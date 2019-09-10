@@ -1,3 +1,7 @@
-<p>
-  movie-info-component works!
-</p>
+<div class=Thumnail>
+  <app-movie-thumnail *ngFor="let Movie of MOVIES" [item] = "Movie"></app-movie-thumnail>
+</div>
+
+<div class=info>
+  <app-movie-data *ngFor="let Movie of MOVIES" [item] = "Movie"></app-movie-data>
+</div>

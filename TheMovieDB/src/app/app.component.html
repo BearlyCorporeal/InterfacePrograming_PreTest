@@ -1,4 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-navigation-bar></app-navigation-bar>
-<app-movie-info-component></app-movie-info-component>
+<div class=Thumnail>
+  <app-movie-thumnail *ngFor="let Movie of MOVIES" [item] = "Movie"></app-movie-thumnail>
+</div>
+
+<div class=info>
+  <app-movie-data *ngFor="let Movie of MOVIES" [item] = "Movie"></app-movie-data>
+</div>
+
 <app-footer-bar></app-footer-bar>
